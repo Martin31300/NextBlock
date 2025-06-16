@@ -1,0 +1,20 @@
+:root {
+	--purple-color: #b840f0;
+	--blue-color: #6bade0;
+	--black-color: #090717;
+	--white-color: white;
+	--grey-color: #828698;
+	--red-color: #ff0101;
+	--green-color: #5eff00;
+	--font-text: "Open Sans", sans-serif;
+	--font-grand-titre: "Audiowide", cursive;
+	--font-tit: "Helvetica Neue", "Arial", sans-serif;
+	--font-titres: "Bebas Neue", sans-serif;
+	--radius: 12px;
+	--gap: 24px;
+	--big-gap: 52px;
+	--gradiant: linear-gradient(45deg, #b840f0, #6bade0);
+	--btn-scale: 1.05;
+	--transition-speed: 0.4s;
+	--shadow: 0px 0px 20px #6bade0;
+}

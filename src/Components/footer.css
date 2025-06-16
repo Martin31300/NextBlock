@@ -1,0 +1,65 @@
+.Footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: var(--black-color);
+	font-family: var(--font-text);
+	height: 220px;
+	align-items: center;
+}
+
+.Page {
+	display: flex;
+	flex-direction: column;
+	color: var(--purple-color);
+}
+
+.logoFooter {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	margin-top: 30px;
+}
+
+.slogan {
+	color: var(--white-color);
+}
+
+.TitreLogo {
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+	padding-bottom: 5px;
+	color: white;
+	font-family: var(--font-grand-titre);
+}
+
+.TitreFooter {
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+.BouttonCrypto {
+	border-radius: 20px;
+	width: 180px;
+	height: 45px;
+	background: var(--gradiant);
+}
+
+.CouleurLogo {
+	color: var(--purple-color);
+	font-family: var(--font-grand-titre);
+}
+
+.LinkFooter {
+	text-decoration: none;
+	color: var(--blue-color);
+	font-family: var(--font-text);
+}
+
+.Page {
+	gap: 10px;
+}
+
+.BouttonCrypto:hover {
+	transform: scale(1.1);
+}

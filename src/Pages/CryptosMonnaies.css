@@ -1,0 +1,79 @@
+.MAIN-CryptoCard {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 21px;
+	padding-bottom: 120px;
+}
+
+.Card-Filtre-SearchBar {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	gap: 24px;
+}
+
+.Filtre {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+.FiltersContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin-bottom: 40px;
+	margin-top: 12px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.FiltersContainer select {
+	background-color: var(--black-color);
+	color: var(--white-color);
+	border: 1px solid var(--blue-color);
+	border-radius: 12px;
+	padding: 8px;
+	font-family: var(--font-text);
+	font-size: 16px;
+}
+
+.PictoFiltre {
+	cursor: pointer;
+}
+
+.PictoSearch,
+.PictoFiltre {
+	height: 48px;
+	width: 48px;
+}
+
+.divSearchBar {
+	display: flex;
+	align-items: center;
+	background-color: var(--black-color);
+	border-radius: 100px;
+	border: solid var(--blue-color) 2px;
+	height: 48px;
+	padding-left: 8px;
+}
+
+.SearchBar {
+	height: 44px;
+	width: 60vw;
+	background-color: var(--black-color);
+	border-radius: 100px;
+	border: none;
+	color: var(--white-color);
+	font-family: var(--font-text);
+	font-size: 24px;
+	border-style: none;
+}
+
+.linkCryptoMonnaie {
+	text-decoration: none;
+}

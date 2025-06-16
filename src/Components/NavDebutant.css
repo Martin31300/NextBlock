@@ -1,0 +1,41 @@
+Nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: "Open Sans", sans-serif;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	padding-top: 30px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+}
+
+.NavPages {
+	gap: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.BtnCrypto {
+	/* height: 55px;
+	width: 250px; */
+	font-size: 20px;
+	padding: 0.7rem;
+	font-family: "Open Sans", sans-serif;
+	background: var(--gradiant);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+#btnCrypto {
+	width: 200px;
+}
