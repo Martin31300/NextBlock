@@ -2,9 +2,15 @@ import "./NavDebutant.css";
 import { Link, useOutletContext } from "react-router";
 import logo from "../img/logocrypto.png";
 import SwitchMode from "./SwitchMode";
+import type { Dispatch, SetStateAction } from "react";
+
+export interface OutletContext {
+	isBeginner: Boolean;
+	setIsBeginner: Dispatch<SetStateAction<Boolean>>;
+}
 
 function NavDebutant() {
-	const { isBeginner, setIsBeginner } = useOutletContext();
+	const { isBeginner, setIsBeginner } = useOutletContext<OutletContext>();
 	return (
 		<nav className="NavP">
 			<Link to="/">

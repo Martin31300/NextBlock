@@ -8,9 +8,30 @@ import data from "../data.json";
 import PictoFiltre from "../img/Pictos/Picto-Filtre-Full.svg";
 import PictoSearch from "../img/Pictos/Picto-Search-Full.svg";
 
+export interface Crypto {
+	id: string;
+	name: string;
+	symbol: string;
+	logo: string;
+	price: string;
+	percentage_change: string;
+	market_cap: string;
+	total_supply: string;
+	circulating_supply: string;
+	token_allocation: string;
+	monetary_policy: string;
+	token_utility: string;
+	website: string;
+	whitepaper: string;
+	description: string;
+	candlestick_chart: string;
+	line_chart: string;
+	tradingview_link: string;
+}
+
 function CryptoMonnaies() {
-	const [search, setSearch] = useState("");
-	const [cryptos, setCryptos] = useState([]);
+	const [search, setSearch] = useState<string>("");
+	const [cryptos, setCryptos] = useState<Crypto[] | never[]>([]);
 
 	const [showFilters, setShowFilters] = useState(false);
 	const [selectedMarketCap, setSelectedMarketCap] = useState("");

@@ -1,7 +1,5 @@
 import { Link } from "react-router";
 import NavDebutant from "../../Components/NavDebutant";
-import imgFondHome from "../../img/imgFondHome.png";
-import imgFondText from "../../img/imgFondText.png";
 
 function Risques() {
 	return (

@@ -1,13 +1,9 @@
 import { useOutletContext } from "react-router";
 import "./toggleSwitchHome.css";
-import React, { useState } from "react";
+import type { OutletContext } from "./NavDebutant";
 
 function ToggleSwitchHome() {
-	const { isBeginner, setIsBeginner } = useOutletContext();
-
-	const handleSwitch = (mode) => {
-		setLevel(mode);
-	};
+	const { isBeginner, setIsBeginner } = useOutletContext<OutletContext>();
 
 	return (
 		<div className="switch-containerHome">

@@ -9,8 +9,13 @@ import {
 	YAxis,
 } from "recharts";
 
+interface Data {
+	time: string;
+	price: number;
+}
+
 function GraphiqueCrypto() {
-	const [data, setData] = useState([]);
+	const [data, setData] = useState<Data[] | never[]>([]);
 
 	useEffect(() => {
 		// Générer des données aléatoires simulées (par exemple : 24h de données horaires)

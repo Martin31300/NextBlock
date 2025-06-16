@@ -1,7 +1,7 @@
-import { useState } from "react";
 import "./SwitchMode.css";
+import type { OutletContext } from "./NavDebutant";
 
-const SwitchMode = ({ isBeginner, setIsBeginner }) => {
+const SwitchMode = ({ isBeginner, setIsBeginner }: OutletContext) => {
 	const toggleSwitch = () => {
 		setIsBeginner(!isBeginner);
 	};

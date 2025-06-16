@@ -5,10 +5,12 @@ import { Link } from "react-router";
 import GraphiqueCrypto from "../Components/GraphiqueCrypto";
 import NavPrincipal from "../Components/NavPrincipal";
 import PictoFullScreen from "../img/Pictos/Picto-FullScreen-Full.svg";
+import type { Crypto } from "./CryptosMonnaies";
+import data from "../data.json";
 
 function ProfilCrypto() {
 	const { id } = useParams();
-	const [crypto, setCrypto] = useState();
+	const [crypto, setCrypto] = useState<Crypto>();
 	const [isFullScreen, setIsFullScreen] = useState(false);
 
 	const toggleFullScreen = () => {
@@ -17,9 +19,10 @@ function ProfilCrypto() {
 
 	useEffect(() => {
 		async function getCrypto() {
-			const response = await fetch(`http://localhost:3000/cryptos/${id}`);
+			/*const response = await fetch("http://localhost:3000/cryptos");
 			const data = await response.json();
-			setCrypto(data);
+			setCryptos(data);*/
+			setCrypto(data.cryptos.find((crypto) => crypto.id === id));
 		}
 
 		getCrypto();
@@ -163,7 +166,7 @@ function ProfilCrypto() {
 					<article
 						className={`articleGraphique ${isFullScreen ? "fullscreenGraphique" : ""}`}
 					>
-						<GraphiqueCrypto id={id} />
+						<GraphiqueCrypto />
 
 						<div className="DivBtnGraph">
 							<Link className="btnTradingView" to={crypto.tradingview_link}>

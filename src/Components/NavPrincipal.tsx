@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import MenuBurger from "./MenuBurger";
-import SwitchMode from "./SwitchMode";
 import "./NavPrincipal.css";
 import logo from "../img/logocrypto.png";
 
