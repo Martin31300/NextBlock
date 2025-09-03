@@ -11,8 +11,7 @@ function SearchBar({ search, setSearch }: SearchBarProps) {
 			value={search}
 			onInput={(event) => setSearch((event.target as HTMLInputElement).value)}
 			className="SearchBar"
-			type="text"
-		/>
+			type="text"/>
 	);
 }
 
