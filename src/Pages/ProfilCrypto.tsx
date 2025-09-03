@@ -32,7 +32,6 @@ function ProfilCrypto() {
 		crypto && (
 			<main className="bodyProfil">
 				<NavPrincipal />
-				<h1>deddededde</h1>
 				<section className="sectionProfilCrypto">
 					<article className="FullDataProfilCrypto">
 						<div className="DivLogoNomProfilCrypto">
